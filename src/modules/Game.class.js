@@ -151,6 +151,7 @@ export default class Game {
     this.score = 0;
     this.status = 'playing';
 
+    document.querySelector('.message-start').classList.add('hidden');
     document.querySelector('.message-win').classList.add('hidden');
     document.querySelector('.message-lose').classList.add('hidden');
 
@@ -174,6 +175,7 @@ export default class Game {
     this.score = 0;
     this.status = 'idle';
 
+    document.querySelector('.message-start').classList.add('hidden');
     document.querySelector('.message-win').classList.add('hidden');
     document.querySelector('.message-lose').classList.add('hidden');
 

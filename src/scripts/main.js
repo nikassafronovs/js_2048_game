@@ -11,13 +11,17 @@ const startButton = document.getElementsByClassName('button start')[0];
 startButton.addEventListener('click', () => {
   if (game.getStatus() === 'idle') {
     game.start();
-    startButton.textContent = 'Restart';
+
+    startButton.classList.remove('start');
     startButton.classList.add('restart');
+    startButton.textContent = 'Restart';
   } else {
     game.restart();
     game.start();
-    startButton.textContent = 'Restart';
+
+    startButton.classList.remove('start');
     startButton.classList.add('restart');
+    startButton.textContent = 'Restart';
   }
 });
 
